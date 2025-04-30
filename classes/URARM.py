@@ -78,7 +78,7 @@ class URARM:
         total_time = t1 + t2 + t3 + t4
         print("Total time:", total_time)
         # Calculate the meeting point based on the x position and total time
-        x_m = x_rel - (0.02 * (total_time - 2.5))
+        x_m = x_rel - (0.02 * (total_time))
         print("Meeting point:", x_m)
         self.rotate_TCP(rz=rz, t=t1)
         self.movel(URARM.relative_pose(z=-0.18), t=t2)
